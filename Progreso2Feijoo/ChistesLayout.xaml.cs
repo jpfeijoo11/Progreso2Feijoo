@@ -6,4 +6,8 @@ public partial class ChistesLayout : ContentPage
 	{
 		InitializeComponent();
 	}
+    private void BotonChistes_Clicked(object sender, EventArgs e)
+    {
+       
+    }
 }
