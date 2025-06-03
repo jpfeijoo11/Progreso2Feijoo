@@ -13,12 +13,21 @@
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
-            <Image
-                Source="imagen5.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
-            
+            <FlexLayout
+                Direction="Row"
+                Wrap="Wrap"
+                JustifyContent="Center"
+                AlignItems="Center"
+                
+                AlignContent="Center"
+>
+
+                <Image Source="imagen5.png" WidthRequest="300" HeightRequest="100" />
+                <Image Source="imagen6.png" WidthRequest="300" HeightRequest="100" />
+                
+
+            </FlexLayout>
+
             <Button
                 x:Name="BotonChistesLayout"
                 Text="Chistes"
