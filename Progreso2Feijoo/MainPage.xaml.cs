@@ -9,16 +9,14 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void BotonChistesLayout_Clicked(object sender, EventArgs e)
         {
-            count++;
+            Navigation.PushAsync(new ChistesLayout());
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private void BotonAboutLayout_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AboutLayout());
         }
     }
 
